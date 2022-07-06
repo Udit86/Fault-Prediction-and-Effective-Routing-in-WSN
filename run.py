@@ -114,14 +114,10 @@ while True :
             break
 
     #enablePrint()
-    # my_net.generate_all_msgs()
-    # view.plot_msg_paths([my_net.nodes[z+1].gen_msg.path for z in range(my_net.num_nodes)])
-    # plt.show(block = False)
-    # plt.pause(3)
-    # plt.close(view.view)
+    view.plot_msg_paths([my_net.nodes[z+1].gen_msg.path for z in range(my_net.num_nodes)])
+    plt.show(block = False)
+    plt.pause(3)
+    plt.close(view.view)
 
 enablePrint()
 print(Measurement_data)
-# print(my_net.nodes_linkage)
-# for i in range(my_net.num_nodes):
-#     print(my_net.nodes[i+1].linked_nodes)
