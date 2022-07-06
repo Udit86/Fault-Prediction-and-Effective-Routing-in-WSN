@@ -15,7 +15,7 @@ class net_view(object):
             plt.scatter(self.net.nodes[node].pos_x,self.net.nodes[node].pos_y,label='nodes',color='red',marker='o',s=10)
             plt.annotate(str(self.net.nodes[node].id),(self.net.nodes[node].pos_x,self.net.nodes[node].pos_y+0.1))
             for j in self.net.nodes[node].neighbour_nodes:
-                plt.plot([self.net.nodes[node].pos_x,self.net.nodes[j].pos_x],[self.net.nodes[node].pos_y,self.net.nodes[j].pos_y],color = 'cyan')
+                plt.plot([self.net.nodes[node].pos_x,self.net.nodes[j].pos_x],[self.net.nodes[node].pos_y,self.net.nodes[j].pos_y],color = 'blue')
         return self.view
 
     def plot_msg_paths(self,paths):
